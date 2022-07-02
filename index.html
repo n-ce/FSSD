@@ -7,7 +7,7 @@
     <title>Full Screen Site Redirector</title>
   </head>
   <style>
-   html,body{height:100%,margin:0;padding:0}
+   html,body{height:100%;margin:0;padding:0}
    body{display:flex;justify-content:center;align-items:center;}
   </style>
   <body>
@@ -18,7 +18,7 @@
      const input = document.querySelector('input');
      input.addEventListener('keydown', (e) => { if (e.key === 'Enter') {
      window.location.replace(input.value);
-     }
+     }}
      document.querySelector('button').onclick = () => {document.documentElement.requestFullscreen();}
    
     </script>
