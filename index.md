@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full Screen Site Redirector</title>
+  </head>
+  <style>
+   html,body{height:100%,margin:0;padding:0}
+   body{display:flex;justify-content:center;align-items:center;}
+  </style>
+  <body>
+    <h1>Full Screen Site Redirector</h1>
+    <input type="URL" placeholder="enter URL here">
+    <button>Enter Full Screen</button>
+    <script>
+     const input = document.querySelector('input');
+     input.addEventListener('keydown', (e) => { if (e.key === 'Enter') {
+     window.location.replace(input.value);
+     }
+     document.querySelector('button').onclick = () => {document.documentElement.requestFullscreen();}
+   
+    </script>
+  </body>
+</html>
