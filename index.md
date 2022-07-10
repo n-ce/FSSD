@@ -13,8 +13,8 @@
     iframe{
     display:none;
     border:none;
-    height:100%;
-    width:100%;
+    height:100vh;
+    width:100vw;
 </style>
 <input type="url" placeholder="enter URL here" />
 <iframe></iframe>
